@@ -39,7 +39,7 @@ function LoginForm() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-600 to-red-800">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-red-600 to-red-800">
       <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-md">
         <div className="text-center mb-8">
           <div className="text-5xl mb-4">🚨</div>
@@ -105,7 +105,7 @@ function LoginForm() {
 
 function LoadingFallback() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-600 to-red-800">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-red-600 to-red-800">
       <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-md text-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
         <p className="mt-4 text-gray-600">Carregando...</p>
