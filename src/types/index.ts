@@ -15,7 +15,7 @@ export interface Vehicle {
   id: string;
   plate: string;
   model: string;
-  type: 'USB' | 'USA' | 'Motolância';
+  type: 'USB' | 'USA' | 'Motocicleta';
   status: 'available' | 'in_use' | 'maintenance' | 'inactive';
   lastMaintenance?: string;
   mileage: number;

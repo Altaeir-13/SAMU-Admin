@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Validate type
-    const validTypes = ['USB', 'USA', 'Motolância'];
+    const validTypes = ['USB', 'USA', 'Motocicleta'];
     if (!validTypes.includes(body.type)) {
       return NextResponse.json<ApiResponse<null>>(
         { success: false, error: 'Tipo de veículo inválido' },

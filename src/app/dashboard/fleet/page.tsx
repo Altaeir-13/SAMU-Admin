@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { DataTable } from '@/components/DataTable';
 import { Vehicle } from '@/types';
 
-type VehicleType = 'USB' | 'USA' | 'Motolância';
+type VehicleType = 'USB' | 'USA' | 'Motocicleta';
 type VehicleStatus = 'available' | 'in_use' | 'maintenance' | 'inactive';
 
 interface FormData {
@@ -155,7 +155,7 @@ export default function FleetPage() {
               const typeLabels: Record<string, string> = {
                 USB: 'USB (Básica)',
                 USA: 'USA (Avançada)',
-                Motolância: 'Motolância',
+                Motocicleta: 'Motocicleta',
               };
               return typeLabels[v.type] || v.type;
             },
@@ -226,7 +226,7 @@ export default function FleetPage() {
                 >
                   <option value="USB">USB (Básica)</option>
                   <option value="USA">USA (Avançada)</option>
-                  <option value="Motolância">Motolância</option>
+                  <option value="Motocicleta">Motocicleta</option>
                 </select>
               </div>
               <div>

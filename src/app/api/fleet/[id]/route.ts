@@ -60,7 +60,7 @@ export async function PUT(request: NextRequest, { params }: RouteParams) {
 
     // Validate type if provided
     if (body.type) {
-      const validTypes = ['USB', 'USA', 'Motolância'];
+      const validTypes = ['USB', 'USA', 'Motocicleta'];
       if (!validTypes.includes(body.type)) {
         return NextResponse.json<ApiResponse<null>>(
           { success: false, error: 'Tipo de veículo inválido' },
